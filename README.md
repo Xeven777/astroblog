@@ -7,6 +7,7 @@ npm create astro@latest -- --template blog
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e2cffef8-710b-4d95-b63d-699d78a2db56/deploy-status)](https://app.netlify.com/sites/astro-blog7/deploys)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
