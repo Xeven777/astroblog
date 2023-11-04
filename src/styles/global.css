@@ -1,6 +1,6 @@
 :root {
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
+  --accent: #f57812;
+  --accent-dark: rgb(255, 83, 15);
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
@@ -54,7 +54,8 @@ h6 {
   line-height: 1.2;
 }
 h1 {
-  font-size: 3.052em; text-align: center  ;
+  font-size: 3.052em;
+  text-align: center;
 }
 h2 {
   font-size: 2.441em;
@@ -121,17 +122,57 @@ hr {
   border: none;
   border-top: 1px solid rgb(var(--gray-light));
 }
-.hero{
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.hero img{
+.hero img {
   width: 90%;
   height: 400px;
   object-fit: cover;
   border-radius: 3rem;
+}
+
+button {
+  font-size:clamp(15px,1.7vw,20px);
+  padding: 10px 1rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+button:hover {
+  background:rgb(255, 83, 15) ;
+}
+button:active {
+  scale: 0.96;
+}
+input[type="file"]::file-selector-button {
+  border: none;
+  padding: .5em 1em;
+  border-radius: .5rem;
+  background-color: var(--accent);
+  color: white;
+  transition: 1s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: var(--accent-dark);
+}
+input:focus,textarea:focus{
+  border: 2px solid var(--accent);
+  outline: none;
+}
+input,textarea {
+  padding: 10px;
+  border-radius:10px;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
 }
 @media (max-width: 720px) {
   body {
@@ -141,4 +182,3 @@ hr {
     padding-top: 4.5rem;
   }
 }
-

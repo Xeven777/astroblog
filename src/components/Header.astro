@@ -14,6 +14,7 @@ import { SITE_TITLE } from "../consts";
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/submission">+</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
     </div>
     <div class="social-links">
@@ -65,7 +66,7 @@ import { SITE_TITLE } from "../consts";
   header {
     margin: 0;
     background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
     position: fixed;
     z-index: 10;
@@ -100,7 +101,7 @@ import { SITE_TITLE } from "../consts";
   .social-links a {
     display: flex;
   }
-  .flogo{
+  .flogo {
     display: flex;
     align-items: end;
     justify-content: center;
@@ -115,6 +116,9 @@ import { SITE_TITLE } from "../consts";
     nav a {
       font-size: 16px;
       padding: 15px 10px;
+    }
+    nav {
+      margin: 0 15px;
     }
   }
 </style>
