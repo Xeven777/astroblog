@@ -1,9 +1,10 @@
 ---
-title: 'Simple - URL Shortener '
+title: "Simple - URL Shortener "
 description: Documentation for using this Simple API
-pubDate: '2023-11-30T09:00:00+05:30'
+pubDate: "2023-11-30T09:00:00+05:30"
 heroImage: /assets/pexels-andrea-piacquadio-840996.jpg
 ---
+
 # URL Shortener API Documentation
 
 ## Introduction
@@ -22,10 +23,10 @@ This endpoint is used to shorten a long URL.
 
 #### Request
 
-* **Method : ** `POST`
-* **URL: ** `https://sl8.vercel.app/api/url/shorten`
-* **Headers:**
-  * `Content-Type: application/json`
+- **Method : ** `POST`
+- **URL: ** `https://sl8.vercel.app/api/url/shorten`
+- **Headers:**
+  - `Content-Type: application/json`
 
 ##### Request Body :
 
@@ -35,34 +36,31 @@ This endpoint is used to shorten a long URL.
 }
 ```
 
-* longUrl (string): The long URL that you want to shorten.
+- longUrl (string): The long URL that you want to shorten.
 
 ##### Success Response :
 
-* **Status Code **: **200**
-* **Body :**
-
+- **Status Code **: **200**
+- **Body :**
 
 ```
 {         "shortUrl": "https://sl8.vercel.app/shorty"    "clickCount":7}
 ```
 
-* shortUrl (string): The Shortened URL
-* clickCount (Integer): Number of times the Link has been clicked
+- shortUrl (string): The Shortened URL
+- clickCount (Integer): Number of times the Link has been clicked
 
 **Error Responses :**
 
-* **Status Code: 400 Bad Request**
-* **Body :**
-
+- **Status Code: 400 Bad Request**
+- **Body :**
 
 ```
 {     "error": "Invalid input. Please provide a valid longUrl."}
 ```
 
-* **Status Code: 500 Internal Server Error **
-* **Body :**
-
+- **Status Code: 500 Internal Server Error **
+- **Body :**
 
 ```
 {    "error": "Internal server error. Please try again later."}
