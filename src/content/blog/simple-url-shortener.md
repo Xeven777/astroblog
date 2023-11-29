@@ -43,7 +43,7 @@ This endpoint is used to shorten a long URL.
 - **Status Code**: 200
 - **Body :**
 
-```
+```json
 {
   "shortUrl": "https://sl8.vercel.app/shorty",
   "clickCount":7
@@ -58,7 +58,7 @@ This endpoint is used to shorten a long URL.
 - **Status Code: 400 Bad Request**
 - **Body :**
 
-```
+```json
 {
   "error": "Invalid input. Please provide a valid longUrl."
 }
@@ -67,7 +67,7 @@ This endpoint is used to shorten a long URL.
 - **Status Code: 500 Internal Server Error**
 - **Body :**
 
-```
+```json
 {
   "error": "Internal server error. Please try again later."
 }
@@ -83,7 +83,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"longUrl": "https://exampl
 
 in Node.js:
 
-```
+```js
 const axios = require('axios');
 
 const shortenUrl = async (longUrl) => {
@@ -106,7 +106,7 @@ shortenUrl(exampleLongUrl);
 
 # Response :
 in Json Format:
-```
+```Json
 {
   "shortUrl":"https://sl8.vercel.app/Something",
   "clickCount":1
@@ -115,3 +115,5 @@ in Json Format:
 #### See it in Action :
 
 - [Simply](https://simplifyy.vercel.app/dashboard/url-shortener)
+
+![Simply Screenshot](https://imgur.com/cop3A6d.png)
