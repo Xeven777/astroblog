@@ -106,7 +106,7 @@ shortenUrl(exampleLongUrl);
 
 # Response :
 in Json Format:
-```Json
+```json
 {
   "shortUrl":"https://sl8.vercel.app/Something",
   "clickCount":1
