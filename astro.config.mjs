@@ -3,7 +3,6 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 import jsx from '@vitejs/plugin-vue';
-import tailwind from "@astrojs/tailwind";
 
 import compress from "astro-compress";
 
