@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --accent: #f57812;
   --accent-dark: rgb(255, 83, 15);
@@ -43,6 +47,7 @@ main {
   margin: auto;
   padding: 6em 1em;
 }
+
 h1,
 h2,
 h3,
@@ -136,7 +141,7 @@ hr {
 }
 
 button {
-  font-size:clamp(15px,1.7vw,20px);
+  font-size: clamp(15px, 1.7vw, 20px);
   padding: 10px 1rem;
   background: var(--accent);
   color: white;
@@ -146,15 +151,15 @@ button {
   border-radius: 10px;
 }
 button:hover {
-  background:rgb(255, 83, 15) ;
+  background: rgb(255, 83, 15);
 }
 button:active {
-  scale: 0.96;
+  transform: scale(0.96);
 }
 input[type="file"]::file-selector-button {
   border: none;
-  padding: .5em 1em;
-  border-radius: .5rem;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
   background-color: var(--accent);
   color: white;
   transition: 1s;
@@ -163,13 +168,15 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:hover {
   background-color: var(--accent-dark);
 }
-input:focus,textarea:focus{
+input:focus,
+textarea:focus {
   border: 2px solid var(--accent);
   outline: none;
 }
-input,textarea {
+input,
+textarea {
   padding: 10px;
-  border-radius:10px;
+  border-radius: 10px;
   outline: none;
   width: 100%;
   font-size: 16px;
