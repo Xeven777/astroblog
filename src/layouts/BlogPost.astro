@@ -5,7 +5,13 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 type Props = CollectionEntry<"blog">["data"];
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, author } =
+  Astro.props;
+const link = Astro.url.href;
+const wap = encodeURIComponent(
+  `https://wa.me/?text=Hey! I came across this awesome article - ${title}  in Blastro. Check it out here now! ${link}`
+);
+console.log(wap);
 ---
 
 <html lang="en">
@@ -18,7 +24,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         margin: 0;
       }
       .hero-image {
-        width: 100%;
+        width: 90%;
+        margin: auto;
       }
       .hero-image img {
         display: block;
@@ -30,7 +37,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         width: 720px;
         max-width: calc(100% - 2em);
         margin: auto;
-        padding: 1em;
         color: rgb(var(--gray-dark));
       }
       .title {
@@ -38,6 +44,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
         padding: 1em 0;
         text-align: center;
         line-height: 1;
+      }
+      .author {
+        font-style: italic;
+        color: #6a84acf2;
       }
       .title h1 {
         margin: 0 0 0.5em 0;
@@ -48,6 +58,24 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       }
       .last-updated-on {
         font-style: italic;
+      }
+      .icon svg {
+        padding: 8px;
+        border-radius: 12px;
+        color: white;
+      }
+      .icon:active {
+        transform: scale(0.9);
+      }
+      .link svg {
+        background-color: #2d81fff2;
+      }
+      .wap svg {
+        background-color: rgba(5, 184, 73, 0.949);
+      }
+      .share {
+        text-align: center;
+        margin: auto;
       }
     </style>
   </head>
@@ -76,9 +104,60 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
               }
             </div>
             <h2 class="bold-title">{title}</h2>
+            <h5 class="author">by {author}</h5>
             <hr />
           </div>
           <slot />
+        </div>
+        <div class="share">
+          Share this article :
+          <a href={`${link}`} target="_blank" class="icon link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-share-2"
+              ><circle cx="18" cy="5" r="3"></circle><circle
+                cx="6"
+                cy="12"
+                r="3"></circle><circle cx="18" cy="19" r="3"></circle><line
+                x1="8.59"
+                x2="15.42"
+                y1="13.51"
+                y2="17.49"></line><line
+                x1="15.41"
+                x2="8.59"
+                y1="6.51"
+                y2="10.49"></line></svg
+            >
+          </a>
+          <a
+            href={wap}
+            target="_blank"
+            class="icon wap"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-phone"
+              ><path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path></svg
+            >
+          </a>
         </div>
       </article>
     </main>

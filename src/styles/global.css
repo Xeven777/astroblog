@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --accent: #f57812;
   --accent-dark: rgb(255, 83, 15);
@@ -18,6 +14,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-weight: 500;
@@ -35,9 +34,8 @@ body {
 .bold-title {
   font-weight: 700;
   text-align: center;
-  font-size: clamp(20px, 5vw, 5.1rem);
-  color: rgb(var(--black));
-  @apply text-zinc-800;
+  font-size: clamp(3.2rem, 5vw, 5.1rem);
+  color: #27272a;
 }
 main {
   width: 720px;
@@ -59,6 +57,10 @@ h6 {
 .title {
   font-weight: 600;
   letter-spacing: -0.1px;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 700;
 }
 h2 {
   font-size: 2.441em;

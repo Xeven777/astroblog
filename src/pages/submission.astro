@@ -9,8 +9,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <html lang="en">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
     <style>
+      main {
+        color: #27272a;
+      }
       form {
         display: flex;
         flex-direction: column;
@@ -31,8 +35,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         width: 100%;
         margin: 2rem;
       }
-      #smalltxt{
-        font-size:clamp(0.8rem,1.1vw,1.2rem);
+      #smalltxt {
+        font-size: clamp(0.8rem, 1.1vw, 1.2rem);
         color: rgb(51, 51, 51);
       }
       @media (max-width: 768px) {
@@ -50,7 +54,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   </head>
   <body>
     <Header title={SITE_TITLE} />
-    <main class="text-zinc-800">
+    <main>
       <h2 class="bold-title">Submit Your Blog 🧑‍🚀</h2>
       <form name="submission" data-netlify="true" method="POST">
         <label for="title">Title:</label>
@@ -69,7 +73,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <textarea id="body" name="body" rows="10" required></textarea>
 
         <label for="txtfile">Txt or MarkDown file:</label>
-        <p id="smalltxt">(Optional. If you don't wanna write the whole blog down here, its okay. Just upload your text file and we'll take it from there 😉)</p>
+        <p id="smalltxt">
+          (Optional. If you don't wanna write the whole blog down here, its
+          okay. Just upload your text file and we'll take it from there 😉)
+        </p>
         <input type="file" id="txtfile" name="txtfile" accept=".txt,.md,.mdx" />
 
         <button type="submit">Submit</button>

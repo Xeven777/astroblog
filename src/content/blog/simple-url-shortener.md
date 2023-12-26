@@ -3,11 +3,10 @@ title: "Simply - URL Shortener "
 description: Documentation for using this Simple API
 pubDate: "2023-11-29T09:00:00+05:30"
 heroImage: /assets/pexels-andrea-piacquadio-840996.jpg
+author: "Anish"
 ---
 
 # Simply API Documentation
-
-## Introduction
 
 Welcome to the Simply URL Shortener API! This API allows you to shorten long URLs and provides a mechanism to redirect users to the original URL.You can also see how many times the shortened link has been clicked. Follow the documentation to integrate this service into your applications.
 

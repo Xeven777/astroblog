@@ -3,6 +3,7 @@ title: Here's Astro !
 description: Getting Started with Astro
 pubDate: "2023-11-10T00:00:00+05:30"
 heroImage: "/assets/astro.webp"
+author: "Astro"
 ---
 
 # Astro: A Modern Web Development Framework

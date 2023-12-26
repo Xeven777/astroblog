@@ -5,11 +5,13 @@ import react from "@astrojs/react";
 import jsx from '@vitejs/plugin-vue';
 import tailwind from "@astrojs/tailwind";
 
+import compress from "astro-compress";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://astro-blog7.netlify.app/",
   plugins: [jsx()],
-  integrations: [mdx(),sitemap(), react({
+  integrations: [mdx(), sitemap(), react({
     include: ["**/react/*"]
-  }), tailwind()]
+  }), compress()]
 });
