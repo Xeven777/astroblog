@@ -9,7 +9,7 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
   Astro.props;
 const link = Astro.url.href;
 const wap = encodeURIComponent(
-  `https://wa.me/?text=Hey! I came across this awesome article - ${title}  in Blastro. Check it out here now! ${link}`
+  `Hey! I came across this awesome article - **${title}**  in Blastro. Check it out here now! ${link}`
 );
 console.log(wap);
 ---
@@ -138,7 +138,7 @@ console.log(wap);
             >
           </a>
           <a
-            href={wap}
+            href={`https://wa.me/?text=${wap}`}
             target="_blank"
             class="icon wap"
           >
