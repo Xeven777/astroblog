@@ -24,14 +24,14 @@ Building this game wasn't just about entertainment; it was a steep learning curv
 ## Tech Stack that Won the Game:
 
 Here's the arsenal of tools that helped me bring this project to life:
-
 - Framework : Next.js 14
 - Styling: Tailwind CSS ,shadcn.ui
 - Deployment: Netlify
 
 ## Ready to Play the Game?
 
-Enough talk, time to put your skills to the test! Head over to <https://guess-d-num.netlify.app/> and see if you can outsmart the algorithm and claim victory. Don't forget to check out the <https://github.com/Xeven777/guess-the-num> if you're curious about the inner workings of the game.
+Enough talk, time to put your skills to the test! Head over to [The Game](https://guess-d-num.netlify.app) and see if you can outsmart the algorithm and claim victory.
+Don't forget to check out the [Source Code](https://github.com/Xeven777/guess-the-num) in my Github if you're curious about the inner workings of the game.
 
 This project was more than just a coding exercise; it was a thrilling ride of creativity, problem-solving, and pushing my technical boundaries. I hope you enjoy playing it as much as I enjoyed building it!
 
