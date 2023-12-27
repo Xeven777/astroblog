@@ -9,8 +9,9 @@ const { title, description, pubDate, updatedDate, heroImage, author } =
   Astro.props;
 const link = Astro.url.href;
 const wap = encodeURIComponent(
-  `Hey! I came across this awesome article⚡ - *${title}*  in Blastro🔥. Check it out here now! ${link}`
+  `Hey! I came across this awesome article⚡ - *${title.trim()}*  in Blastro🔥. Check it out here now! ${link}`
 );
+console.log(wap);
 ---
 
 <html lang="en">
