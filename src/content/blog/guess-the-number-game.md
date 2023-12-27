@@ -2,14 +2,13 @@
 title: Guess The Number Game
 description: The Making of Guess the Number game in Squid Game Theme
 author: Anish
-pubDate: '2023-12-27T14:07:50+05:30'
+pubDate: "2023-12-27T14:07:50+05:30"
 heroImage: /assets/916shots_so.png
 ---
-Greetings, sweet people!  I'm back with a project that combines my love for coding with the captivating (and slightly terrifying) world of Squid Game: a Next.js-powered "Guess the Number" game with a unique twist! ️‍
+
+Greetings, sweet people! I'm back with a project that combines my love for coding with the captivating (and slightly terrifying) world of Squid Game: a Next.js-powered "Guess the Number" game with a unique twist! ️‍
 
 This wasn't just about recreating a childhood classic; I wanted to infuse the familiar concept with the suspense and strategy that made Squid Game such a global phenomenon. The result is an intense, brain-teasing experience that will have you on the edge of your seat, questioning every click.
-
-
 
 ## Learning Curve to Victory:
 
@@ -26,9 +25,9 @@ Building this game wasn't just about entertainment; it was a steep learning curv
 
 Here's the arsenal of tools that helped me bring this project to life:
 
-* Framework : Next.js 14
-* Styling: Tailwind CSS ,shadcn.ui
-* Deployment: Netlify
+- Framework : Next.js 14
+- Styling: Tailwind CSS ,shadcn.ui
+- Deployment: Netlify
 
 ## Ready to Play the Game?
 
