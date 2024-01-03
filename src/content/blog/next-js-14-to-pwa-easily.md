@@ -2,16 +2,17 @@
 title: Next.Js 14 to PWA easily !
 description: How to convert your Next.Js website to a Progressive Web App
 author: Anish
-pubDate: '2024-01-03T20:39:48+05:30'
+pubDate: "2024-01-03T20:39:48+05:30"
 heroImage: /assets/picsart_24-01-03_20-36-18-909.jpg
 ---
-## So, You Want Your_ Next.js Website_ to Go From Web to "Wow, Dude, _Is That an App_?"
+
+## So, You Want Your* Next.js Website* to Go From Web to "Wow, Dude, _Is That an App_?"
 
 Yeah, yeah, progressive web apps, the future of the internet, blah blah blah. You've heard the buzz, seen the fancy icons in Chrome's address bar, and now you're itching to turn your Next.js site into the next big thing. ✨
 
 So, Picture this: You've got a website. People love it. But what if they could love it even more? Enter PWA - your website's cool transformation into an app-like experience. Users can access your site offline, receive push notifications, and it loads faster than your cat when you shake the treat bag !! Sounds awesome right. So lets do it! 🚀
 
-> I will be using latest  _Next.js 14.0.4 _with  _App-router_.\
+> I will be using latest _Next.js 14.0.4 \_with \_App-router_.\
 > (Cuz there are mostly blogs on the outdated pages router)
 
 ### 1. Install '_next-pwa' _:
@@ -26,15 +27,15 @@ We'll be using a little package called next-pwa, your friendly neighborhood PWA-
 
 ```js
 /** @type {import('next').NextConfig} */
-const withPWA = require('next-pwa')({
-    dest: "public",
-    register: true,
-    skipWaiting: true,
-    disable: process.env.NODE_ENV === 'development',
-})
+const withPWA = require("next-pwa")({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === "development",
+});
 module.exports = withPWA({
-    reactStrictMode: true,
-})
+  reactStrictMode: true,
+});
 ```
 
 We'll wrap the next.config with the PWA plugin we just installed.
@@ -105,7 +106,7 @@ Add your manifest.json file in the metadata and set the icons too. Change the vi
 ### 5. Set Up service workers :
 
 🥱mmmmm... You know what?🥱 Just leave it! Our PWA is ready!🎉🪄
-_'next-pwa'_ will automatically setup the service workers during the build process !! 
+_'next-pwa'_ will automatically setup the service workers during the build process !!
 
 ```bash
 public/sw.js
