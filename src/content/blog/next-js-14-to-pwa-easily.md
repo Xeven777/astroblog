@@ -15,7 +15,7 @@ So, Picture this: You've got a website. People love it. But what if they could l
 > I will be using latest _Next.js 14.0.4_ with _App-router_.
 > (Cuz there are mostly blogs on the outdated pages router)
 
-### 1. Install '_next-pwa' _:
+### 1. Install '_next-pwa_' :
 
 `npm/bun i next-pwa`
 
