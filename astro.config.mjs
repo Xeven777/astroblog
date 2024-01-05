@@ -9,7 +9,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-blog7.netlify.app/",
+  site: "https://blastro.netlify.app/",
   plugins: [jsx()],
   integrations: [mdx(), sitemap(), react({
     include: ["**/react/*"]
