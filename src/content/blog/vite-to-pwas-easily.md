@@ -2,9 +2,10 @@
 title: Vite to PWAs easily!
 description: Convert your Vite+React sites into PWAs
 author: Anish
-pubDate: '2024-01-16T18:26:20+05:30'
+pubDate: "2024-01-16T18:26:20+05:30"
 heroImage: /assets/screenshot_2024-01-16_18-25-07.png
 ---
+
 ### So, You Want Your Vite+React Website to Go From Web to "Wow, Dude, _Is That an App_?"
 
 Yeah, yeah, progressive web apps, the future of the internet, blah blah blah. You've heard the buzz, seen the fancy icons in Chrome's address bar, and now you're itching to turn your vite+react site into the next big thing. ✨
@@ -22,14 +23,13 @@ We'll be using a little package called vite-plugin-pwa, your friendly neighborho
 ### 2. Update your '_vite.config.js_' :
 
 ```js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { VitePWA } from 'vite-plugin-pwa'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  plugins: [react(), VitePWA()]
-})
-
+  plugins: [react(), VitePWA()],
+});
 ```
 
 We'll wrap the vite.config with the PWA plugin we just installed. For most minimal cases (without taking in count- caching) this will enough.
@@ -70,10 +70,10 @@ Use any favicon generator to generate icons💫 of different sizes. And also you
 ### 4. Modify your HTML head tags :
 
 ```html
-<link rel="manifest" href="/site.webmanifest">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 ```
 
 Add your manifest.json file in the metadata and set the icons too.
