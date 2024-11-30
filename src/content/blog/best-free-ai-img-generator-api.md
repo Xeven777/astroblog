@@ -17,7 +17,7 @@ This Hono.js-powered API allows you to generate stunning AI images using multipl
 ### Base URL
 
 ```
-https://ai-image-api.xeven.workers.dev/img
+https://ai-image-api.xeven.workers.dev
 ```
 
 ### Available Query Parameters
